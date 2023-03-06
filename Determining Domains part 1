@@ -1,0 +1,9 @@
+kdef check_continuity(f, var, a):
+    try:
+            f = sympify(f)
+        except SympifyError:
+            return("Invaild input")
+        else:
+            x1 = Symbol(var, positive = True)
+            x2 = Symbol(var, negative = True)
+            //I don't know what to do after this
